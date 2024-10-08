@@ -74,6 +74,7 @@ app.get('/posts/:postId', async (req, res) => {
     res.status(500).send('Error finding post');
   }
 });
+console.log("MongoDB Connection String:", process.env.MONGO_DB);
 
 // Start the server
 app.listen(3000, () => console.log('Server running on port 3000'));
