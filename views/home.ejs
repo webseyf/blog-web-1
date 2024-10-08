@@ -1,0 +1,12 @@
+<%- include('partials/header') -%>
+
+
+  <h1>frist Seyfadin's Node JS project</h1>
+<br>
+
+<% hello.map( yes=>{  %>
+  <h1 style="color: rgb(4, 60, 165);"><%=yes.title%></h1>
+  <p><%=yes.body%></p> <hr>
+ <% }) %>
+
+<%- include("partials/footer") -%>
